@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(to right, #184d70, #51ec92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+   
+}
+
+.word-container {
+    display: inline-flex;
+    font-size: 60px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 1s ease 1s forwards;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+.letter {
+    display: inline-block;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideInUp 1.5s ease forwards; 
+}
+
+@keyframes slideInUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
